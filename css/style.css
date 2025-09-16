@@ -1,0 +1,144 @@
+/* Gaya untuk h1 */
+h1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container utama untuk seluruh konten */
+.main-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Container untuk peta dan tombolnya */
+#map-container {
+    position: relative; /* Ini penting agar posisi absolut tombol di dalamnya bisa bekerja */
+    height: 700px;
+    width: 800px;
+}
+
+/* Gaya untuk peta itu sendiri */
+#map {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Gaya untuk container tombol di dalam peta */
+#map-controls {
+    position: absolute; /* Posisikan secara absolut di dalam container peta */
+    top: 10px;
+    left: 50px;
+    z-index: 1000; /* Pastikan tombol berada di atas peta */
+    display: flex;
+    gap: 8px;
+}
+
+/* Gaya untuk tombol */
+#resetViewBtn, #backViewBtn {
+    font-family: Arial, sans-serif;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetViewBtn:hover, #backViewBtn:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk info control Leaflet */
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+/* Gaya untuk legenda */
+.legend {
+    text-align: left;
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+/* Gaya untuk tooltip */
+.kab-label {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Gaya untuk container tabel */
+#table-container {
+    width: 380px;
+    height: 680px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+/* Gaya untuk elemen tabel */
+#table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+/* Gaya untuk header tabel */
+#table-container thead th {
+    position: sticky;
+    top: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 8px;
+    text-align: left;
+}
+
+/* Gaya untuk sel data */
+#table-container tbody td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Efek saat kursor diarahkan ke baris */
+#table-container tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Menghilangkan garis bawah pada baris terakhir */
+#table-container tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Gaya untuk highlight baris tabel */
+#table-container tbody tr.highlight {
+    background-color: #fce4b3;
+    font-weight: bold;
+}
