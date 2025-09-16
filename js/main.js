@@ -589,5 +589,4 @@ document.getElementById('resetViewBtn').onclick = function() {
 
     hideBackButton();
     previousLevelState = null;
-
 };
