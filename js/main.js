@@ -517,7 +517,7 @@ fetch('data/GA_banten_kab_simplified.geojson')
     .then(response => response.json())
     .then(data => {
         kecData = data;
-        return fetch('data/GA_banten_desa2_simplified_r2.geojson');
+        return fetch('data/GA_banten_desa_simplified_r2.geojson');
     })
     .then(response => response.json())
     .then(data => {
@@ -589,4 +589,5 @@ document.getElementById('resetViewBtn').onclick = function() {
 
     hideBackButton();
     previousLevelState = null;
+
 };
